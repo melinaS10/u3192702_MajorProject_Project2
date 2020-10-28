@@ -1,0 +1,1703 @@
+/* ---- PROJECT 2 STYLESHEET ---- */
+/* ---------------------------------------------------------------- */
+
+body{
+    background-color: black;
+    font-family: 'Cutive Mono', monospace;
+    }
+
+/* ---------------------------------------------------------------- */
+/* ---- Homepage ---- */
+
+.headmain{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-weight: 100;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+         }
+.border1{
+     border-bottom: 5px dotted #ffffff;
+}
+
+.border2{
+     border-bottom: 5px dotted #ffffff;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* ---- Navigation ---- */
+
+.divider{
+    background-image: url(../images/mainbackground.jpg);
+    background-size: cover;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.nav{
+    margin-left: 25em;
+}
+
+
+.nav div{
+    display: inline-block;
+    }
+
+.nav a img{
+    width: 150px;
+    transition: 1s;
+    margin:20px;
+          }
+
+.nav a img:hover {
+    width: 200px;
+    visibility: visible;
+}
+
+.nav h2{
+    display: inline-block;
+    color: white;
+    position: inherit;
+    margin: auto;
+}
+
+.label p{
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Homepage heading: typewriter ----*/
+
+/* ---- Positioning the typewriting effect and set colour. ---- */
+.typewriter {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 28%;
+    color: white;
+}
+
+.typewriter h1 {
+    border-right: 1px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(25) 1s 1 normal both;
+}
+
+/* ---- Set styles for typewriting animation ---- */
+.typewriter #line-1 {
+    border-right: 1px solid white;
+    white-space: nowrap;
+    margin-left: 5em;
+    overflow: hidden;
+    width: 450px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(40) 1s 1 normal both;
+    animation-delay: 3.5s;
+}
+
+/* ---- Add animation keyframes for typewriter  ---- */
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    border-right: none;
+     }
+  0.1% {
+    border-right: 1px solid rgb(220,220,220);
+     }
+  99.9% {
+    border-right: 1px solid rgb(220,220,220);
+        }
+  100% {
+    border: none;
+       }
+}
+
+/* ---------------------------------------------------------------- */
+/*---- About section ----*/
+
+/* ---- About information will not show, unless selected ---- */
+#toggle {
+    appearance: none;
+    cursor: pointer;
+    left: -100%;
+    top: -100%;
+}
+
+#toggle + label {
+    position: absolute;
+    cursor: pointer;
+    padding: 10px;
+    background: #000;
+    width: 100px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    padding: 8px 10px;
+    color: #FFF;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    margin: 20px 50px;
+    transition: all 500ms ease;
+}
+
+/* ---- Before about is selected, About will show in button ---- */
+#toggle + label:after {
+    content: "ABOUT"
+}
+
+/* ---- Will appear when button is selected ---- */
+.slidecontainer {
+    transition: margin 100ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    padding: 5em 3em;
+}
+
+#toggle:checked ~ .message {
+    top: 0;
+}
+#toggle:checked ~ .slidecontainer {
+    margin-top: 250px;
+}
+#toggle:checked + label {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* ---- After selection, button will change to close ---- */
+#toggle:checked + label:after {
+    content: "CLOSE"
+}
+
+/* ---- Setting styles for the about section ---- */
+.message {
+    background: #000000 none repeat scroll 0 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    height: 280px;
+    left: 0;
+    overflow: hidden;
+    padding-top: 5em;
+    padding-bottom: 7em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 12.2em;
+    position: absolute;
+    top: -520px;
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94) 0s;
+    width: 100%;
+    transition: 0.8s all ease;
+}
+
+.message h1 {
+  color: #FFF;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---- Artist signatures ---- */
+
+.logo img{
+    width: 200px;
+    margin-bottom: 1em;
+    margin-left: 9em;
+    margin-top: 2em;
+    animation: fadeIn 0.5s ease-in both;
+         }
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.explain{
+    color:white;
+    margin-left: 9em;
+    margin-top: -2em;
+    position: absolute;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---- Back button ---- */
+
+.back{
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Art Gallery ----*/
+
+.rown{
+    margin-left: 13.5em;
+}
+
+.columnn {
+    float: left;
+    width: 15%;
+}
+
+/*---- Image in grid styles ----*/
+.columnn img {
+    opacity: 0.8; 
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-left: 5em;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    filter: grayscale();
+    transition: 0.2s all ease;
+}
+
+.columnn img:hover {
+    opacity: 1;
+    filter: none;
+}
+
+/*---- Clear floats after the columns ----*/
+.rown:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*---- The expanding image container ----*/
+.containern {
+    position: relative;
+    display: none;
+    width: 500px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-top: 1em;
+    margin-left: 32%;
+}
+
+/*---- Image text -----*/
+#imgtextn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #000000;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+/*---- Exit button ----*/
+.closebtnn {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.closebtnn:hover {
+    color: darkgray;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Art gallery border and heading styles ----*/
+
+.art-gallery{
+    border-top: 2px dotted #ffffff;
+    margin-top: 3em;
+}
+
+.art-gallery h2{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- PABLO PICASSO page ----*/
+
+.datep h1{
+    color: white;
+    position: absolute;
+    margin: auto;
+    margin-top: -1em;
+    margin-left: 37.2em;
+}
+
+.mediump h1{
+    color: white;
+    position: absolute;
+    margin: auto;
+    margin-top: 9.3em;
+    margin-left: 0.1em;
+    transform: rotate(-90deg);
+}
+
+.dimenp h1{
+    color: white;
+    position: absolute;
+    margin: auto;
+    margin-top: 6.5em;
+    margin-left: 34.9em;
+    width: 330px;
+    transform: rotate(90deg);
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .painting{
+   width: 1090px;
+   border: 1px solid #ffffff;
+   padding: 1em;
+   margin-left: 10%;
+}
+
+.info{
+    color: white;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Painting styles and animations ----*/
+
+.art .scream{
+    width: 140px;
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 210px;
+    transition: 0.2s ease;
+    animation: mover2 1s infinite  alternate;
+}
+
+.art .scream:hover{
+    animation: none;
+}
+
+@keyframes mover2 {
+    0% { transform: translateX(0); }
+    30% { transform: translateY(0); }
+    50%{transform: translateY(-3px); }
+    100% { transform: translateX(-4px); }
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .arm{
+    width: 280px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 555px;
+    animation: pulse 1s ease infinite alternate;
+}
+
+.art .arm:hover{
+   animation: none; 
+}
+
+.art .fly{
+    width: 170px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 830px;
+    animation: 
+    pulse 1s ease infinite alternate, 
+    nudge 3s linear infinite alternate;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 80%;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  80% {
+    transform: translate(-5px, 0);
+  }
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .head{
+    width: 170px;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 305px;
+    animation: shake 1s; 
+    animation-iteration-count: infinite;
+}
+
+.art .head:hover{
+    animation: none;
+}
+
+.bubble .speech{
+    position: absolute;
+    width: 250px;
+    margin-left: 25em;
+    margin-top: 120px;
+    visibility: hidden; 
+}
+
+.bubble:hover .speech{
+    visibility: visible;
+}
+
+.art .head:hover{
+    animation: none;
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .horse{
+    width: 295px;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 475px;
+    transition: 0.2s ease;
+    animation: mover 0.3s infinite  alternate;
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-3px); }
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .light{
+    width: 255px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 438px;
+    animation: blur 5s ease 0s infinite;
+    -webkit-animation: blur 5s ease 0s infinite;
+    -moz-animation: blur 5s ease 0s infinite;
+}
+
+.art .person{
+    width: 501px;
+    position: absolute;
+    margin-top: 144px;
+    margin-left: 752px;
+    animation: 
+    mover1 0.5s infinite  alternate;
+}
+
+@keyframes mover1 {
+    0% { transform: translateX(0); }
+     30% { transform: translateY(0); }
+    50%{transform: translateY(-2px); }
+    100% { transform: translateX(-2px); }
+}
+
+@keyframes blur {
+  0%,
+  90% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    -ms-filter: blur(30px);
+  }
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .man{
+    width: 225px;
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 1021px;
+    animation: shake 0.6s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(-1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(-1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(-1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.art .man:hover{
+    animation: none;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---- Pablo Picasso page: About artist popup ---- */
+
+.box {
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 1087px;
+}
+
+.button {
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background-color: gray;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #000000;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+    color: darkgray;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Scream image serves as selector for artwork information ----*/
+
+.imgtext {
+  position: absolute;
+}
+
+.imgtext .imghov {
+  visibility: hidden;
+  width: 300px;
+  background-color: grey;
+  color: #ffffff;
+  text-align: left;
+  padding: 18px;
+  position: absolute;
+  margin-left: 27.5em;
+  margin-top: 17em;
+}
+
+.imgtext:hover .imghov {
+  visibility: visible;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Screaming man image serves as selector for artwork information ----*/
+
+.imgtxt {
+  position: absolute;
+}
+
+.imgtxt .imgcli {
+ visibility: hidden;
+  width: 300px;
+  background-color: grey;
+  color: #ffffff;
+  text-align: left;
+  padding: 18px;
+  position: absolute;
+  margin-left: 11em;
+  margin-top: 1em;
+}
+
+.imgtxt:hover .imgcli {
+  visibility: visible;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Arm image serves as selector for artwork information ----*/
+
+.imgtx {
+  position: absolute;
+}
+
+.imgtx .imghv {
+ visibility: hidden;
+  width: 300px;
+  background-color: grey;
+  color: #ffffff;
+  text-align: left;
+  padding: 18px;
+  position: absolute;
+  margin-left: 45em;
+  margin-top: 1em;
+}
+
+.imgtx:hover .imghv {
+  visibility: visible;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Background animations for Guernica ----*/
+.back1{
+    width: 138px;
+    margin-top: 2em;
+    margin-left: 1034px;
+    animation: glitch 1s infinite;
+    position: absolute;
+}
+
+.back2{
+    width: 220px;
+    margin-top: 3em;
+    margin-left: 14.8em;
+    position: absolute;
+    animation: 
+    pulse 1s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+}
+
+@keyframes glitch {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.2deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.5deg, -0.4deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-3deg, 0.5deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.8deg, 3deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/*---- SALVADOR DALI PAGE ----*/
+
+.art .painting2{
+   width: 830px;
+   height: 520px;
+   border: 1px solid #ffffff;
+   padding: 1em;
+   margin-left: 18%;
+}
+
+.head-section .logo1{
+    width: 255px;
+    margin-bottom: -1em;
+    margin-left: 8em;
+    margin-top: 0.5em;
+}
+
+.head-section{
+    margin: auto;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.head-section .explain1 p{
+    color: #ffffff;
+    margin-bottom: 1em;
+    margin-left: 16em;
+    position: absolute;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Artwork details styles ----*/
+
+.art .details .date h1{
+    margin-left: 1042px;
+    margin-top: -1em;
+    color: #ffffff;
+    position: absolute;
+}
+
+.art .details .medium h1{
+    margin-left: 3.6em;
+    margin-top: 12.9em;
+    position: absolute;
+    color: #ffffff;
+    transform: rotate(-90deg);
+}
+
+.art .details .dimen h1{
+    margin-left: 31.9em;
+    margin-top: 8em;
+    position: absolute;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Artwork animations ----*/
+
+
+.art .melt{
+    position: absolute;
+    margin-left: 10.7em;
+    margin-top: 8.7em;
+    width: 13em;
+}
+
+.melt .des {
+  visibility: hidden;
+  width: 300px;
+  background-color: #79A2D8;
+  color: #ffffff;
+  text-align: left;
+  padding: 18px;
+  position: absolute;
+  margin-top: 2.5em;
+  margin-left: 6.3em;
+}
+
+.melt:hover .des {
+  visibility: visible;
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .drop{
+    position: absolute;
+    margin-left: 31.7em;
+    margin-top: 5em;
+    width: 115px;
+    animation: 
+    pulse3 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
+}
+
+.art .drop2{
+    position: absolute;
+    margin-left: 31.7em;
+    margin-top: 5em;
+    width: 115px;
+    animation: 
+    pulse3 3s ease infinite alternate;
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .eye img{
+    position: absolute;
+    margin-left: 35.5em;
+    margin-top: 16.2em;
+    width: 28.5em;
+    animation:
+    pulse3 3s ease infinite alternate;
+}
+
+@keyframes pulse3 {
+  0%, 100% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 70%;
+  }
+}
+
+.eye .des {
+    visibility: hidden;
+    width: 300px;
+    color: #ffffff;
+    background-color: #79A2D8;
+    text-align: left;
+    padding: 18px;
+    position: absolute;
+    margin-left: 48em;
+    margin-top: 1em;
+}
+
+.eye:hover .des {
+    visibility: visible;
+    animation: none;
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .rock{
+    position: absolute;
+    margin-left: 24.9em;
+    margin-top: 1.7em;
+    width: 306px;
+}
+
+.rock .des {
+    visibility: hidden;
+    width: 300px;
+    background-color: #79A2D8;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px;
+    position: absolute;
+    margin-left: 0.2em;
+    margin-top: 0.1em;
+}
+
+.rock:hover .des {
+    visibility: visible;
+}
+
+.art .stop{
+    position: absolute;
+    margin-left: 17em;
+    margin-top: 24em;
+    width: 150px;
+    animation: glitch 5s infinite;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- About styles ----*/
+
+.boxd {
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 945px;
+}
+
+.buttond {
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.buttond:hover {
+    background-color: gray;
+}
+
+.overlayd {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlayd:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popupd {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.popupd h2 {
+    margin-top: 0;
+    color: #000000;
+}
+.popupd .closed {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popupd .closed:hover {
+    color: darkgray;
+}
+
+.popupd .contentd {
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- VINCENT VAN GOGH styles ----*/
+
+.art .painting1{
+   width: 830px;
+   height: 585px;
+   margin-left: 18em;
+   padding: 1em;
+   border: 1px solid #ffffff;
+}
+
+.explain2 p{
+    margin-left: 18em;
+    margin-top: -1em;
+    color: #ffffff;
+    position: absolute;
+}
+
+.logo2{
+    width: 200px;
+    margin-bottom: 1em;
+    margin-left: 9em;
+    margin-top: 1em;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Artwork details ----*/
+
+.details2 .date2 h1{
+    color: #ffffff;
+    position:absolute;
+    margin-left: 1074px;
+    margin-top: -1em;
+}
+
+.details2 .medium2 h1{
+    color: #ffffff;
+    position:absolute;
+    margin-left: 4.5em;
+    margin-top: 14.8em;
+    transform: rotate(-90deg);
+}
+
+.details2 .dimen2 h1{
+    color: #ffffff;
+    position:absolute;
+    transform: rotate(90deg);
+    margin-left: 32.4em;
+    margin-top: 10em;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- Artwork styles and animations ----*/
+
+.star1{
+    position: absolute;
+    width: 8em;
+    margin-left: 46.6em;
+    margin-top: 0.7em;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.star2{
+    position: absolute;
+    width: 6em;
+    margin-top: 6em;
+    margin-left: 53.3em;
+    animation: rotation 2s infinite linear;
+}
+
+.star3{
+    position: absolute;
+    width: 6em;
+    margin-top: 4.5em;
+    margin-left: 28.3em;
+    animation: rotation 2s infinite linear;
+}
+
+.star4{
+    position: absolute;
+     width: 4.5em;
+     margin-top: 10.1em;
+     margin-left: 34em;
+     animation: rotation 2s infinite linear;
+}
+
+.star5{
+     position: absolute;
+     width: 8em;
+     margin-left: 33.5em;
+     margin-top: 16em;
+     animation: rotation 2s infinite linear;
+}
+
+.star6{
+    position: absolute;
+    width: 2.8em;
+    margin-top: 1.7em;
+    margin-left: 39.2em;
+    animation: rotation 2s infinite linear;
+}
+
+.star7{
+    position: absolute;
+    width: 5em;
+    margin-top: 1em;
+    margin-left: 35em;
+    animation: rotation 2s infinite linear;
+}
+
+.star8{
+     position: absolute;
+     margin-top: 1em;
+     margin-left: 29em;
+     width: 4em;
+     animation: rotation 2s infinite linear;
+}
+
+.star9{
+     position: absolute;
+     margin-top: 0.6em;
+     margin-left: 21.2em;
+     width: 6.2em;
+     animation: rotation 2s infinite linear;
+}
+
+.star10{
+     position: absolute;
+     margin-top: 15.6em;
+     margin-left: 23.5em;
+     width: 4.5em;
+     animation: rotation 2s infinite linear;
+}
+
+.star11{
+     position: absolute;
+     margin-top: 15.2em;
+     margin-left: 19em;
+     width: 4.5em;
+     animation: rotation 2s infinite linear;
+}
+
+.lights{
+    position: absolute;
+    margin-left: 41.7em;
+    margin-top: 29.2em;
+    width: 29em;
+    height: 8.3em;
+    animation: blur 2s ease 2s infinite;
+}
+
+
+.swirl1{
+    position: absolute;
+    width: 602px;
+    margin-left: 304px;
+    margin-top: 1.5em;
+    animation: 
+    pulse3 2s ease infinite alternate;
+}
+
+.swirl2{
+    position: absolute;
+    width: 400px;
+    margin-left: 591px;
+    margin-top: 8em;
+    animation: 
+    pulse3 1s ease infinite alternate;
+}
+
+/* ---------------------------------------------------------------- */
+
+.tree{
+    position: absolute;
+    width: 380px;
+    margin-left: 20em;
+    margin-top: 0.3em;
+}
+
+.art .tree{
+    position: absolute;
+    margin-left: 9.5em;
+    margin-top: 0.6em;
+    width: 415px;
+    height: 583px;
+}
+
+.tree .dest {
+    visibility: hidden;
+    width: 300px;
+    background-color: #79A2D8;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px;
+    position: absolute;
+    margin-left: 40.5em;
+    margin-top: 20em;
+}
+
+.tree:hover .dest {
+    visibility: visible;
+}
+
+/* ---------------------------------------------------------------- */
+
+.art .moon{
+    position: absolute;
+    margin-left: 31em;
+    margin-top: 1.4em;
+    width: 130px;
+}
+
+.moon .desm {
+    visibility: hidden;
+    width: 300px;
+    background-color: #79A2D8;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px;
+    position: absolute;
+    margin-left: -11.5em;
+    margin-top: 0.1em;
+}
+
+.moon:hover .desm {
+    visibility: visible;
+}
+
+/* ---------------------------------------------------------------- */
+/*---- About styles ----*/
+
+.boxv {
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 975px;
+}
+
+.buttonv {
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.buttonv:hover {
+  background-color: gray;
+}
+
+.overlayv {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlayv:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupv {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.popupv h2 {
+    margin-top: 0;
+    color: #000000;
+}
+.popupv .closev {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popupv .closev:hover {
+    color: darkgray;
+}
+
+.popupv .contentv {
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---- Footer ---- */
+
+footer{
+    text-align: center;
+     font-size: 12px;
+    color: white;
+}
+footer .border{
+    border-bottom: 2px dotted #ffffff;
+    margin-top: 2em;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px){
+    
+    .nav{
+        margin-right: 15.5em;
+        margin-left: 15.5em;
+}
+
+    .nav div{
+        display: block;
+    }
+
+    .nav a img{
+        width: 180px;
+   }
+    
+    .typewriter {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 5em;
+        margin-right: 5em;
+        color: white;
+    }
+    
+    #toggle + label {
+        background: #000;
+        width: 120px;
+        padding: 10px 10px;
+        color: #FFF;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        font-size: 14px;
+        margin: 20px 50px;
+    }
+
+    .label p{
+        margin-top: 4em;
+    }
+
+    .message {
+        color: #ffffff;
+        height: 300px;
+        width: 100%;
+        transition: 0.8s all ease;
+}
+  
+    .logo img{
+        margin-left: 4em;
+         }
+
+    .explain{
+        visibility: hidden;
+}
+    
+    .datep, .mediump, .dimenp{
+     visibility: hidden;
+    
+    }
+    
+    .back1, .back2, .fly, .light, .horse, .person, .imgtx, .imgtext, .imgtxt, .bubble, .head, .speech{
+        visibility: hidden;
+    }
+    
+    .art .painting{
+        width: 600px;
+        margin-left: 3.5em;
+    }
+    
+    .box {
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 55px;
+    }
+
+
+    .popup {
+        margin: 20px auto;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 3em;
+        background: #fff;
+        width: 50%;
+        position: relative;
+        transition: all 2s ease-in-out;
+    }
+
+
+    .art-gallery{
+        border-top: 2px dotted #ffffff;
+        margin-top: 3em;
+    }
+
+    .art-gallery h2{
+        text-align: center;
+        font-size: 30px;
+        color: #ffffff;
+    }
+    
+    .rown{
+        margin-left: 1em;
+    }
+
+    .columnn {
+        float: left;
+        width: 17%;
+    }
+
+    .columnn img {
+        margin-left: 3.5em;
+        border: 1px solid #ffffff;
+    }
+
+
+    .containern {
+        position: relative;
+        display: none;
+        width: 500px;
+        margin-left: 15%;
+    }
+
+/* ---------------------------------------------------------------- */
+    
+    .head-section .logo1{
+        margin-left: 2em;
+        width: 15em;
+    }
+
+    .explain1 p{
+        visibility: hidden;
+    }
+    
+    .drop, .drop2, .drop3, .stop, .rock, .eye, .melt{
+        visibility: hidden;
+    }
+    
+    .details h1{
+        visibility: hidden;
+    }
+    
+    .details .painting2{
+        width: 600px;
+        height: 400px;
+        margin-left: 4em;
+    }
+    
+    .boxd {
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+
+
+    .popupd {
+        margin: 20px auto;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 3em;
+        background: #fff;
+        width: 50%;
+        position: relative;
+        transition: all 2s ease-in-out;
+    }
+    
+/* ---------------------------------------------------------------- */
+    
+   .logo2{
+        margin-left: 3em;
+        width: 12em;
+    }
+
+    .explain2 p{
+        visibility: hidden;
+    }
+    
+    .star1, .star2, .star3, .star4, .star5, .star6, .star7, .star8, .star9, .star10, .star11, .swirl1, .swirl2, .lights, .tree, .moon {
+        visibility: hidden;
+    }
+    
+    .details2 h1{
+        visibility: hidden;
+    }
+    
+    .art .painting1{
+        width: 500px;
+        height: 350px;
+        margin-left: 7em;
+    }
+    
+    .boxv {
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 110px;
+    }
+
+
+    .popupv {
+        margin: 20px auto;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 3em;
+        background: #fff;
+        width: 50%;
+        position: relative;
+        transition: all 2s ease-in-out;
+    }
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    .nav{
+        margin-right: 8em;
+        margin-left: 8em;
+    }
+
+    .nav div{
+        display: block;
+        
+    }
+
+    .nav a img{
+        width: 180px;
+   }
+    
+    .typewriter {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 1.2em;
+        margin-right: 1.5em;
+        font-size: 12px;
+    }
+    
+    .typewriter p{
+        font-size: 14px;
+    }
+    
+    .art .painting{
+        width: 400px;
+        margin-left: 2em;
+    }
+    
+    .box {
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .popup {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 3em;
+        background: #fff;
+        width: 59%;
+    }
+
+    .rown{
+        margin-left: 0.5em;
+    }
+
+    .columnn {
+        float: left;
+        width: 20%;
+    }
+
+    .columnn img {
+        display: inline-block;
+        width: 5em;
+        height: 5em;
+        margin-left: 0.1em;
+    }
+
+    .containern {
+        position: relative;
+        display: none;
+        width: 300px;
+        margin-left: 15%;
+        
+    }
+    
+/* ---------------------------------------------------------------- */
+
+    
+    .details .painting2{
+        width: 420px;
+        height: 280px;
+        margin-left: 1em;
+    }
+    
+    .boxd {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .popupd {
+        margin: 10px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 3em;
+        background: #fff;
+        width: 80%;
+        position: relative;
+        transition: all 2s ease-in-out;
+    }
+
+/* ---------------------------------------------------------------- */
+
+     .art .painting1{
+        width: 380px;
+        height: 280px;
+        margin-left: 3em;
+    }
+    
+    .boxv {
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 48px;
+    }
+
+    .popupv {
+        margin: 5px auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 3em;
+        background: #fff;
+        width: 60%;
+        position: relative;
+        transition: all 2s ease-in-out;
+    }
+}
+
+/* ---------------------------------------------------------------- */

@@ -1,0 +1,134 @@
+<!-- INTERACTIVE ARTWORKS: SALVADOR DALI PAGE -->
+<!DOCTYPE html>
+<html>
+<title>Dali | The Persistence of Memory</title>
+<head>
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <script src="assets/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+
+    <a class="back" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,12A12,12,0,1,0,12,0,12,12,0,0,0,0,12Zm14.106,0L9.381,7.321a1.114,1.114,0,0,1,1.575-1.575l5.5,5.521a1.112,1.112,0,0,1,.035,1.535l-5.423,5.44A1.112,1.112,0,1,1,9.5,16.673Z" transform="translate(24 24) rotate(180)" fill="#ffffff"/></svg>
+    </a>
+    
+    <div class="head-section">
+        <a class="logo1" href="https://thedali.org">
+            <img class="logo1" src="assets/images/dalisig.png">
+        </a>
+        
+    <div class="explain1">
+        <p>Hover over the painting to reveal facts about the artwork.</p>
+    </div> 
+    </div>
+    
+    
+ <div class="art">
+        
+        <div class="details">
+            
+            <img class="drop" src="assets/images/drop.png">
+            <img class="drop2" src="assets/images/drop.png">
+            <img class="stop" src="assets/images/stopwatch.png">
+        
+            <div class="date">
+                <h1>1931</h1>
+            </div>
+        
+            <div class="medium">
+                <h1>Oil on canvas</h1>
+            </div>
+    
+            <div class="dimen">
+                <h1>24.1 x 33 cm</h1>
+            </div>
+               
+            <div class="rock">
+                <img class="rock" src="assets/images/rock.png">
+                <span class="des">The year before this picture was painted, Dalí formulated his “paranoiac-critical method,” cultivating self-induced psychotic hallucinations in order to create art. “The difference between a madman and me,” he said, “is that I am not mad.”
+                </span>
+             </div>
+            
+            <div class="eye">
+                <img class="eye" src="assets/images/eye.png">
+                <span class="des">Those limp watches are as soft as overripe cheese—indeed, they picture “the camembert of time,” in Dalí’s phrase. Here time must lose all meaning. Permanence goes with it: ants, a common theme in Dalí’s work, represent decay, particularly when they attack a gold watch, and they seem grotesquely organic. The monstrous fleshy creature draped across the painting’s center is at once alien and familiar: an approximation of Dalí’s own face in profile, its long eyelashes seem disturbingly insect-like or even sexual, as does what may or may not be a tongue oozing from its nose like a fat snail.
+                </span>
+            </div>
+            
+            <div class="melt">
+                <img class="melt" src="assets/images/clock.png">
+                <span class="des">Hard objects become inexplicably limp in this bleak and infinite dreamscape, while metal attracts ants like rotting flesh. Mastering what he called “the usual paralyzing tricks of eye-fooling,” Dalí painted with “the most imperialist fury of precision,” he said, but only “to systematize confusion and thus to help discredit completely the world of reality.” It is the classic Surrealist ambition, yet some literal reality is included, too: the distant golden cliffs are the coast of Catalonia, Dalí’s home.
+                </span>
+            </div>  
+        
+            <img class="painting2" src="assets/images/ThePersistenceofMemory.jpg">
+        
+      </div>
+    
+     <div class="boxd">
+	   <a class="buttond" href="#popupd">About the artist</a>
+    </div>
+
+    <div id="popupd" class="overlayd">
+	   <div class="popupd">
+		  <h2>Salvador Dali</h2>
+          <p>Figueres, Spain, 1904 - Figueres, Spain, 1989</p>
+          <a class="closed" href="#">&times;</a>
+           
+		  <div class="contentd">
+                <p>
+                Salvador Dalí is among the most versatile and prolific artists of the 20th century and the most famous Surrealist. Though chiefly remembered for his painterly output, in the course of his long career he successfully turned to sculpture, printmaking, fashion, advertising, writing, and, perhaps most famously, filmmaking in his collaborations with Luis Buñuel and Alfred Hitchcock. Dalí was renowned for his flamboyant personality and role of mischievous provocateur as much as for his undeniable technical virtuosity. In his early use of organic morphology, his work bears the stamp of fellow Spaniards Pablo Picasso and Joan Miró. His paintings also evince a fascination for Classical and Renaissance art, clearly visible through his hyper-realistic style and religious symbolism of his later work.
+                </p>
+		  </div>
+	   </div>
+    </div>
+ </div>
+    
+<div class="art-gallery">
+    <h2>Art Gallery</h2> 
+    
+        <div class="artgallery">
+    
+            <!-- Art Gallery Grid -->
+            <div class="rown">
+                <div class="columnn">
+                    <img src="assets/images/faceofwar.jpg" alt="The Face of War | 1940" onclick="myFunction(this);">
+                </div>
+            
+                <div class="columnn">
+                    <img src="assets/images/tosa.jpg" alt="The temptation of St. Anthony | 1946" onclick="myFunction(this);">
+                </div>
+            
+                <div class="columnn">
+                    <img src="assets/images/anthropomorphiccabinet.jpg" alt="The anthromorphic cabinet | 1936" onclick="myFunction(this);">
+                </div>
+            
+                <div class="columnn">
+                    <img src="assets/images/lobstertelephone.jpg" alt="Lobster telephone | 1936" onclick="myFunction(this);">
+                </div>
+            
+                <div class="columnn">
+                    <img src="assets/images/Galatea.jpg" alt="The Galatea of the Spheres| 1952" onclick="myFunction(this);">
+                </div>
+            </div>
+    
+            <!-- Expanded Image container when artwork icons are selected -->
+            <div class="containern">
+                <!-- Close container  -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtnn">&times;
+                </span>
+                <!-- Expanded image -->
+                <img id="expandedImgn" style="width:100%">
+                <div id="imgtextn"></div>
+            </div> 
+        </div>
+</div> 
+</body>
+    
+<footer>
+    <div class="border"></div>
+    <p>Melina Seserko. Major Project. 2020.</p>  
+</footer>
+</html>

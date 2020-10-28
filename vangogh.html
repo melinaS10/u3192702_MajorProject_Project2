@@ -1,0 +1,138 @@
+<!-- INTERACTIVE ARTWORKS: VINCENT VAN GOGH PAGE -->
+<!DOCTYPE html>
+<html>
+<title>Van Gogh | Starry Night</title>
+    
+<head>
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <script src="assets/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <a class="back" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,12A12,12,0,1,0,12,0,12,12,0,0,0,0,12Zm14.106,0L9.381,7.321a1.114,1.114,0,0,1,1.575-1.575l5.5,5.521a1.112,1.112,0,0,1,.035,1.535l-5.423,5.44A1.112,1.112,0,1,1,9.5,16.673Z" transform="translate(24 24) rotate(180)" fill="#ffffff"/></svg>
+    </a>
+    
+    <a class="logo2" href="https://www.vangoghgallery.com">
+        <img class="logo2" src="assets/images/vangoghsig.png">
+    </a>
+    
+     <div class="explain2">
+         <p>Hover over the painting to reveal facts about the artwork.</p>
+    </div>
+
+    <div class="art">
+        
+        <img class="star1" src="assets/images/star1.png">
+        <img class="star2" src="assets/images/star2.png">
+        <img class="star3" src="assets/images/star3.png">
+        <img class="star4" src="assets/images/star4.png">
+         <img class="star5" src="assets/images/star5.png">
+        <img class="star6" src="assets/images/star6.png">
+        <img class="star7" src="assets/images/star7.png">
+        <img class="star8" src="assets/images/star8.png">
+        <img class="star9" src="assets/images/star9.png">
+        <img class="star10" src="assets/images/star10.png">
+        <img class="star11" src="assets/images/star11.png">
+        <img class="lights" src="assets/images/lights.png">
+        <img class="swirl1" src="assets/images/swirl.png">
+        <img class="swirl2" src="assets/images/swirl1.png">
+        
+        <div class="details2">
+        
+            <div class="date2">
+                <h1>1889</h1>
+            </div>
+        
+            <div class="medium2">
+                <h1>Oil on canvas</h1>
+            </div>
+    
+            <div class="dimen2">
+                <h1>73.7 x 92.1 cm</h1>
+            </div>
+            
+        </div>
+        
+        <div class="tree">
+                <img class="tree" src="assets/images/shrub.png">
+                <span class="dest">Notice the brush strokes. For the sky they swirl, each dab of color rolling with the clouds around the stars and moon. On the cypress tree they bend with the curve of the branches. The whole effect is ethereal and dreamlike. The hills easily roll down into the little village below. In contrast, the town is straight up and down, done with rigid lines that interrupt the flow of the brush strokes.
+                </span>
+            </div>
+        
+          <div class="moon">
+                <img class="moon" src="assets/images/moon.png">
+                <span class="desm"> Tiny little trees soften the inflexibility of the town. Bringing nature into the unnaturalness of buildings.One of the biggest points of interest about this painting is that it came entirely from Van Gogh’s imagination. None of the scenery matches the area surrounding Saint-Paul or the view from his window. As a man who religiously paints what he sees, it’s a remarkable break from Van Gogh’s normal work.
+                </span>
+            </div>
+        
+        
+        <img class="painting1" src="assets/images/starrynight.jpg">
+        
+    </div>
+    
+ <div class="boxv">
+	<a class="buttonv" href="#popupv">About the artist</a>
+</div>
+    
+<div id="popupv" class="overlayv">
+	<div class="popupv">
+		<h2>Vincent Van Gogh</h2>
+        <p>Groot-Zundert, Holland 1853. -  Auvers-sur-Oise, France 1890</p>
+		<a class="closev" href="#">&times;</a>
+		<div class="contentv">
+            <p>
+            Van Gogh found his place in art and produced emotional, visually arresting paintings over the course of a career that lasted only a decade. Largely self-taught, van Gogh produced more than 2,000 oil paintings, watercolors, drawings, and sketches. It was nature, and the people living closely to it, that first stirred van Gogh’s artistic inclinations. Van Gogh was particularly taken with the peasants he saw working the countryside; his early compositions featured portraits of Dutch peasants and rural landscapes, rendered in dark, moody tones.The style he developed in Paris and carried through to the end of his life became known as Post-Impressionism.
+            </p>
+		</div>
+	</div>
+</div>
+    
+<div class="art-gallery">
+    <h2>Art Gallery</h2> 
+    
+        <div class="artgallery">
+
+            <!-- Art Gallery Grid -->
+            <div class="rown">
+                <div class="columnn">
+                    <img src="assets/images/bedroom.jpg" alt="The Bedroom | 1888" onclick="myFunction(this);">
+                </div>
+                
+                <div class="columnn">
+                    <img src="assets/images/sunflowers.jpg" alt="Sunflowers | 1888" onclick="myFunction(this);">
+                </div>
+                
+                <div class="columnn">
+                    <img src="assets/images/potatoeaters.jpg" alt="The Potato  Eaters | 1885" onclick="myFunction(this);">
+                </div>
+                
+                <div class="columnn">
+                    <img src="assets/images/ChurchatAuvers.jpg" alt="Church at Auvers | 1890" onclick="myFunction(this);">
+                </div>
+                
+                <div class="columnn">
+                    <img src="assets/images/prisonersexercising.jpg" alt="Prisoners exercising| 1890" onclick="myFunction(this);">
+                </div>
+            </div>
+    
+            <!-- Expanded Image container when artwork icons are selected -->
+            <div class="containern">
+                 <!-- Close container  -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtnn">&times;</span>
+                <!-- Expanded image -->
+                <img id="expandedImgn" style="width:100%">
+                <div id="imgtextn"></div>
+            </div> 
+    
+    </div>
+</div>
+</body>
+    
+<footer>
+    <div class="border"></div>
+    <p>Melina Seserko. Major Project. 2020.</p>  
+</footer>
+</html>

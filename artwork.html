@@ -1,0 +1,132 @@
+<!-- INTERACTIVE ARTWORKS: PABLO PICASSO PAGE -->
+<!DOCTYPE html>
+<html>
+<title>Picasso | Guernica</title>
+    
+<head>
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <script src="assets/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    
+<!-- Back button ==> homepage -->
+    <a class="back" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,12A12,12,0,1,0,12,0,12,12,0,0,0,0,12Zm14.106,0L9.381,7.321a1.114,1.114,0,0,1,1.575-1.575l5.5,5.521a1.112,1.112,0,0,1,.035,1.535l-5.423,5.44A1.112,1.112,0,1,1,9.5,16.673Z" transform="translate(24 24) rotate(180)" fill="#ffffff"/></svg></a>
+    
+    <a class="logo" href="https://www.pablopicasso.org">
+        <img class="logo" src="assets/images/Picasso.png">
+    </a>
+    
+    <div class="explain">
+        <p>Hover over the painting to reveal facts about the artwork.</p>
+    </div>
+
+    <div class="art">
+        
+        <div class="datep">
+            <h1>1937</h1>
+        </div>
+     
+        <div class="mediump">
+            <h1>Oil on canvas</h1>
+        </div>
+    
+        <div class="dimenp">
+            <h1>349,3 x 776,6 cm</h1>
+        </div>
+       
+        <img class="back1" src="assets/images/back.png">
+        <img class="back2" src="assets/images/back1.png">
+        <img class="fly" src="assets/images/flying.png">
+        <img class="light" src="assets/images/light.png">
+        <img class="horse" src="assets/images/horse.png">
+        <img class="person" src="assets/images/person.png">
+        
+        
+        <div class="imgtx">
+            <img class="arm" src="assets/images/arm.png">
+            <span class="imghv">Pablo Picasso’s motivation for painting the scene in this great work was the news of the German aerial bombing of the Basque town whose name the piece bears, which the artist had seen in the dramatic photographs published in various periodicals, including the French newspaper L'Humanité. Despite that, neither the studies nor the finished picture contain a single allusion to a specific event, constituting instead a generic plea against the barbarity and terror of war.
+            </span>
+        </div>
+        
+        <div class="imgtext">
+            <img class="scream" src="assets/images/screaming.png">
+            <span class="imghov">An accurate depiction of a cruel, dramatic situation, Guernica was created to be part of the Spanish Pavilion at the International Exposition in Paris in 1937. </span>
+        </div>
+        
+        <div class="imgtxt">
+            <img class="man" src="assets/images/man.png">
+            <span class="imgcli">The huge picture is conceived as a giant poster, testimony to the horror that the Spanish Civil War was causing and a forewarning of what was to come in the Second World War. The muted colours, the intensity of each and every one of the motifs and the way they are articulated are all essential to the extreme tragedy of the scene, which would become the emblem for all the devastating tragedies of modern society.
+            </span>
+        </div>
+        
+        <div class="bubble">
+        <img class="head" src="assets/images/head.png">
+        <img class="speech" src="assets/images/speechnew.png">
+        </div>
+        
+        <img class="painting" src="assets/images/guernica.jpg">
+        
+    </div>
+    
+ <div class="box">
+	<a class="button" href="#popup1">About the artist</a>
+</div>
+    
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Pablo Picasso</h2>
+        <p>Malaga, Spain, 1881 - Mougins, France, 1973</p>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+            <p>
+            As a significant influence on 20th-century art, Pablo Picasso was an innovative artist who experimented and innovated during his 92-plus years on earth. He was not only a master painter but also a sculptor, printmaker, ceramics artist, etching artist and writer. His work matured from the naturalism of his childhood through Cubism, Surrealism and beyond, shaping the direction of modern and contemporary art through the decades. Picasso lived through two World Wars, sired four children, appeared in films and wrote poetry. 
+            </p>
+		</div>
+	</div>
+</div>
+    
+<div class="art-gallery">
+    <h2>Art Gallery</h2> 
+
+    <!-- Art Gallery Grid -->  
+    <div class="rown">
+        <div class="columnn">
+            <img src="assets/images/weepingwoman.jpg" alt="Weeping Woman | 1937" onclick="myFunction(this);">
+        </div>
+    
+        <div class="columnn">
+            <img src="assets/images/dm.jpg" alt="Les Demoiselles d'Avignon | 1907" onclick="myFunction(this);">
+        </div>
+    
+        <div class="columnn">
+            <img src="assets/images/threemusicians.jpg" alt="The three musicians | 1921" onclick="myFunction(this);">
+        </div>
+    
+        <div class="columnn">
+            <img src="assets/images/girlbeforeamirror.jpg" alt="Girl before the mirror | 1932" onclick="myFunction(this);">
+        </div>
+    
+        <div class="columnn">
+            <img src="assets/images/redarmchair.jpg" alt="The red armchair| 1931" onclick="myFunction(this);">
+        </div>
+    </div>
+    
+<!-- Expanded Image container when artwork icons are selected -->
+    
+    <div class="containern">
+        <!-- Close container  -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtnn">&times;</span>
+        <!-- Expanded image -->
+        <img id="expandedImgn" style="width:100%">
+        <div id="imgtextn"></div>
+    </div> 
+</div>
+</body>
+    
+<footer>
+    <div class="border"></div>
+    <p>Melina Seserko. Major Project. 2020.</p>  
+</footer>
+</html>
